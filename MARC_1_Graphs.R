@@ -42,3 +42,78 @@ abline(D.spicata.reg, col="green", lty=3)
 boxplot(MARC_TRIAL1_B.series$Shoot.Length ~ MARC_TRIAL1_B.series$Species)
 boxplot(MARC_TRIAL1_B.series$Shoot.Length ~ MARC_TRIAL1_B.series$Tank)
 boxplot(MARC_TRIAL1_B.series$Root.Length ~ MARC_TRIAL1_B.series$Tank)
+
+#Creating graphs to show tank level growth
+
+plot1_A1s<-ggplot(data = MARC_TRIAL1_A.series, aes(x=MARC_TRIAL1_A.series$Date, y=MARC_TRIAL1_A.series$A1.s)) +
+  geom_point(color="Blue", linewidth=2, alpha=0.9) +
+  theme(axis.text.x = element_text(size = 8))
+
+plot2_A2s<-ggplot(data = MARC_TRIAL1_A.series, aes(x=MARC_TRIAL1_A.series$Date, y=MARC_TRIAL1_A.series$A2.s)) +
+  geom_point(color="Green", linewidth=2, alpha=0.9) +
+  theme(axis.text.x = element_text(size = 8))
+
+plot3_A3s<-ggplot(data = MARC_TRIAL1_A.series, aes(x=MARC_TRIAL1_A.series$Date, y=MARC_TRIAL1_A.series$A3.s)) +
+  geom_point(color="Red", linewidth=2, alpha=0.9) +
+  theme(axis.text.x = element_text(size = 8))
+
+plot1_A1r<-ggplot(data = MARC_TRIAL1_A.series, aes(x=MARC_TRIAL1_A.series$Date, y=MARC_TRIAL1_A.series$A1.r)) +
+  geom_point(color="Blue", linewidth=2, alpha=0.9) +
+  theme(axis.text.x = element_text(size = 8))
+
+plot2_A2r<-ggplot(data = MARC_TRIAL1_A.series, aes(x=MARC_TRIAL1_A.series$Date, y=MARC_TRIAL1_A.series$A2.r)) +
+  geom_point(color="Green", linewidth=2, alpha=0.9) +
+  theme(axis.text.x = element_text(size = 8))
+
+plot3_A3r<-ggplot(data = MARC_TRIAL1_A.series, aes(x=MARC_TRIAL1_A.series$Date, y=MARC_TRIAL1_A.series$A3.r)) +
+  geom_point(color="Red", linewidth=2, alpha=0.9) +
+  theme(axis.text.x = element_text(size = 8))
+
+plot1_B1s<-ggplot(data = MARC_TRIAL1_A.series, aes(x=MARC_TRIAL1_A.series$Date, y=MARC_TRIAL1_A.series$B1.s)) +
+  geom_point(color="Blue", linewidth=2, alpha=0.9) +
+  theme(axis.text.x = element_text(size = 8))
+
+plot2_B2s<-ggplot(data = MARC_TRIAL1_A.series, aes(x=MARC_TRIAL1_A.series$Date, y=MARC_TRIAL1_A.series$B2.s)) +
+  geom_point(color="Green", linewidth=2, alpha=0.9) +
+  theme(axis.text.x = element_text(size = 8))
+
+plot3_B3s<-ggplot(data = MARC_TRIAL1_A.series, aes(x=MARC_TRIAL1_A.series$Date, y=MARC_TRIAL1_A.series$B3.s)) +
+  geom_point(color="Red", linewidth=2, alpha=0.9) +
+  theme(axis.text.x = element_text(size = 8))
+
+plot1_B1r<-ggplot(data = MARC_TRIAL1_A.series, aes(x=MARC_TRIAL1_A.series$Date, y=MARC_TRIAL1_A.series$B1.r)) +
+  geom_point(color="Blue", linewidth=2, alpha=0.9) +
+  theme(axis.text.x = element_text(size = 8))
+
+plot2_B2r<-ggplot(data = MARC_TRIAL1_A.series, aes(x=MARC_TRIAL1_A.series$Date, y=MARC_TRIAL1_A.series$B2.r)) +
+  geom_point(color="Green", linewidth=2, alpha=0.9) +
+  theme(axis.text.x = element_text(size = 8))
+
+plot3_B3r<-ggplot(data = MARC_TRIAL1_A.series, aes(x=MARC_TRIAL1_A.series$Date, y=MARC_TRIAL1_A.series$B3.r)) +
+  geom_point(color="Red", linewidth=2, alpha=0.9) +
+  theme(axis.text.x = element_text(size = 8))
+
+plot1_C1s<-ggplot(data = MARC_TRIAL1_A.series, aes(x=MARC_TRIAL1_A.series$Date, y=MARC_TRIAL1_A.series$C1.s)) +
+  geom_point(color="Blue", linewidth=2, alpha=0.9) +
+  theme(axis.text.x = element_text(size = 8))
+
+plot2_C2s<-ggplot(data = MARC_TRIAL1_A.series, aes(x=MARC_TRIAL1_A.series$Date, y=MARC_TRIAL1_A.series$C2.s)) +
+  geom_point(color="Green", linewidth=2, alpha=0.9) +
+  theme(axis.text.x = element_text(size = 8))
+
+plot3_C3s<-ggplot(data = MARC_TRIAL1_A.series, aes(x=MARC_TRIAL1_A.series$Date, y=MARC_TRIAL1_A.series$C3.s)) +
+  geom_point(color="Red", linewidth=2, alpha=0.9) +
+  theme(axis.text.x = element_text(size = 8))
+
+plot1_C1r<-ggplot(data = MARC_TRIAL1_A.series, aes(x=MARC_TRIAL1_A.series$Date, y=MARC_TRIAL1_A.series$C1.r)) +
+  geom_point(color="Blue", linewidth=2, alpha=0.9) +
+  theme(axis.text.x = element_text(size = 8))
+
+plot2_C2r<-ggplot(data = MARC_TRIAL1_A.series, aes(x=MARC_TRIAL1_A.series$Date, y=MARC_TRIAL1_A.series$C2.r)) +
+  geom_point(color="Green", linewidth=2, alpha=0.9) +
+  theme(axis.text.x = element_text(size = 8))
+
+plot3_C3r<-ggplot(data = MARC_TRIAL1_A.series, aes(x=MARC_TRIAL1_A.series$Date, y=MARC_TRIAL1_A.series$C3.r)) +
+  geom_point(color="Red", linewidth=2, alpha=0.9) +
+  theme(axis.text.x = element_text(size = 8))
+
